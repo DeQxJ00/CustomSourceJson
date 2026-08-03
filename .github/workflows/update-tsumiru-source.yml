@@ -1,0 +1,51 @@
+name: Update Tsumiru source
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/update_tsumiru_source.py"
+      - ".github/workflows/update-tsumiru-source.yml"
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-tsumiru-source
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Generate source.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_tsumiru_source.py
+
+      - name: Validate JSON
+        run: python -m json.tool source.json >/dev/null
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- source.json; then
+            echo "source.json is already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add source.json
+          git commit -m "Update Tsumiru source"
+          git push
