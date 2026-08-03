@@ -1,13 +1,188 @@
 {
-  "name": "DeQxJ00 Custom Source",
-  "subtitle": "首次提交后由 GitHub Actions 自动生成",
-  "description": "上传本压缩包中的全部文件后，Actions 会自动同步 Tsumiru Release。",
-  "identifier": "com.deqxj00.custom-source-json",
+  "name": "自用源 Custom Source",
+  "subtitle": "适用于 LiveContainer、AltStore 与 SideStore 的自定义源",
+  "description": "自动跟随上游 GitHub Release 更新，目前收录 Tsumiru。",
+  "identifier": "com.custom-source-json",
   "sourceURL": "https://raw.githubusercontent.com/DeQxJ00/CustomSourceJson/main/source.json",
   "iconURL": "https://raw.githubusercontent.com/Suwayomi/Suwayomi-Tsumiru/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
   "website": "https://github.com/DeQxJ00/CustomSourceJson",
   "tintColor": "#6750A4",
-  "featuredApps": [],
-  "apps": [],
+  "featuredApps": [
+    "com.suwayomi.tachideskSorayomi"
+  ],
+  "apps": [
+    {
+      "name": "Tsumiru",
+      "bundleIdentifier": "com.suwayomi.tachideskSorayomi",
+      "developerName": "Suwayomi",
+      "subtitle": "Suwayomi 漫画与条漫客户端",
+      "localizedDescription": "Tsumiru 是 Suwayomi-Server 的原生漫画、Manhwa 与条漫阅读器，支持离线下载、跨章节连续滚动和阅读进度同步。",
+      "iconURL": "https://raw.githubusercontent.com/Suwayomi/Suwayomi-Tsumiru/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#6750A4",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryUsageDescription": "Save manga pages to your photo library.",
+          "NSPhotoLibraryAddUsageDescription": "Save manga pages to your photo library."
+        }
+      },
+      "versions": [
+        {
+          "version": "1.1.3",
+          "buildVersion": "49",
+          "date": "2026-08-01T06:58:48Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### 🚀 Improvements\n\n- Improved double-tap detection in the paged reader (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed chapters still showing as unread in **Updates** after you read them (@aaronbamblett)\n- Fixed downloaded chapters being deleted when **Keep offline** should have kept them (@aaronbamblett)\n- Fixed pages not turning when you tap quickly in the paged reader (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.1.3/tsumiru-v1.1.3-ios.ipa",
+          "size": 19932805,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.1.2",
+          "buildVersion": "48",
+          "date": "2026-07-30T21:17:45Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added hiding and showing categories while offline, with the change applied on your device until the next server sync (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Made library covers appear instantly when switching categories or returning to the app (@aaronbamblett)\n- Made cover loading animations quicker and subtler, skipping the placeholder entirely when a cover loads fast (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed categories deleted on the server still showing up offline (@aaronbamblett)\n- Fixed hidden categories reappearing offline (@aaronbamblett)\n- Fixed offline category tabs all showing the same series count (@aaronbamblett)\n- Fixed deleting a category failing silently without a connection (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.1.2/tsumiru-v1.1.2-ios.ipa",
+          "size": 19783595,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.1.1",
+          "buildVersion": "47",
+          "date": "2026-07-30T14:44:36Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added an **Original size** option to **Long strip scale**, so pages show at their true size instead of stretching to fit the window (@aaronbamblett)\n- Added a **Maximum width** slider for long strip, set as a percentage of the window or a fixed pixel width (@aaronbamblett)\n- Added a **View offline** button to the library loading screen, so you can go straight to your downloaded library instead of waiting for a connection (@aaronbamblett)\n- Added automatic downloads after every library update, fetching new chapters for series with a **Keep offline** rule and removing older ones past its limit (@aaronbamblett)\n- Added a **Download new chapters in the background** option on Android, so keep-offline series stay current while the app is closed (@aaronbamblett)\n\n### ⚙️ Changes\n\n- Made chapter auto-delete wait until you close the reader (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Made offline mode keep your library covers on hand, so artwork shows without a connection (@aaronbamblett)\n- Made the app notice an unreachable server faster and switch to offline mode sooner (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed the **Unread** sort putting series you had finished at the top (@aaronbamblett)\n- Fixed alphabetical sorting putting capital letters first (@aaronbamblett)\n- Fixed the **Started** filter not counting series where you had finished chapters (@aaronbamblett)\n- Fixed the adult content filter hiding regular series just because their source also carries adult titles (@aaronbamblett)\n- Fixed the paged reader stopping partway between two pages (@aaronbamblett)\n- Fixed the pause control on the **Downloads** screen disappearing (@aaronbamblett)\n- Fixed the **Keep offline** limit deleting chapters you had only just read (@aaronbamblett)\n- Fixed the file picker showing an empty folder on the Linux flatpak (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.1.1/tsumiru-v1.1.1-ios.ipa",
+          "size": 19784410,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.1.0",
+          "buildVersion": "46",
+          "date": "2026-07-28T09:10:46Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added filters to the **Updates** and **History** screens (@aaronbamblett)\n- Added a **Grid style** row for **Uniform**, **Non-uniform**, and **Staggered** covers, so artwork of different shapes fits without cropping (@zeedif)\n- Added a **Badges** tab for reordering cover badges and picking which corner each one sits in (@zeedif)\n- Added library grouping **By tag** and **By language** (@zeedif)\n- Added a **List size** slider for the **List** and **Descriptive List** layouts (@zeedif)\n- Added a **Show plain badge** option to the **Unread badge** setting, for a badge with no number on it (@zeedif)\n\n### ⚙️ Changes\n\n- Replaced the library and chapter filter checkboxes with **Any**, **Included**, and **Excluded** chips (@zeedif)\n- Made **History** show series that are no longer in your library (@aaronbamblett)\n- Made settings screens open full screen, so one Back goes back one screen (@aaronbamblett)\n- Renamed the reading modes in settings to **Long strip** and **Long strip with gaps**, matching the reader (@aaronbamblett)\n- Made long strip always scroll on into the next chapter and removed the **Infinity Scrolling Mode** setting (@aaronbamblett)\n- Turned **Tap zones** on by default, so tapping the screen edge turns the page (@aaronbamblett)\n- Turned **Show tap zones overlay** off by default (the zones used to flash on every chapter open) (@aaronbamblett)\n- Hid **Quick Search** on touch devices (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Made **Long strip with gaps** use the same reader as every other mode, so it gets the same zoom and chapter transitions (@aaronbamblett)\n- Made tapping a moving page stop it instead of opening the reader controls (@aaronbamblett)\n- Made the zoom settings separate for the Paged and Long strip readers (changing one used to change both) (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed tapping the screen edge not turning the page (@aaronbamblett)\n- Fixed pinch-zooming leaving the reader stuck between two pages (@aaronbamblett)\n- Fixed **Original size** showing only part of a page with no way to reach the rest (@aaronbamblett)\n- Fixed **Disable zoom in** having no effect in the paged reader (@aaronbamblett)\n- Fixed **Auto scroll** switching itself off whenever you dragged the page (@aaronbamblett)\n- Fixed covers being squashed instead of keeping their shape (@aaronbamblett)\n- Fixed a back swipe opening the filter panel instead of going back (@aaronbamblett)\n- Fixed Back not leaving **Global Search** (@aaronbamblett)\n- Fixed the **Started** filter matching everything in your library (@aaronbamblett)\n- Fixed **Delete finished chapters while reading** removing the wrong chapter (@aaronbamblett)\n- Fixed **Badge layout** order and corner choices resetting (@aaronbamblett)\n- Fixed the library Filter and Display sheet clipping its last options during a library update (@aaronbamblett)\n- Fixed the **Keep offline** sheet clipping its options during a library update (@aaronbamblett)\n- Fixed the **Updates** list repeating rows as you scrolled (@aaronbamblett)\n- Fixed the **Updates** header sitting lower than every other tab (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.1.0/tsumiru-v1.1.0-ios.ipa",
+          "size": 19685515,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "45",
+          "date": "2026-07-25T06:31:04Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added mass migration to move many series between sources at once, with a **Migrate** tab in Browse (@aaronbamblett)\n- Added notifications for new chapters, downloads, app updates, and errors (@aaronbamblett)\n- Added duplicate detection with a warning when adding a series already in your library and a **Scan for duplicates** tool in the library menu (@aaronbamblett)\n- Added preferred scanlation groups per series so chapter lists show one entry per chapter (@aaronbamblett)\n- Added **Extension stores** for managing where your server installs extensions from (@aaronbamblett)\n- Added a **Suggestions** row of recommended series to the manga details page (@aaronbamblett)\n- Added a Sources filter screen to hide sources you never use (@aaronbamblett)\n- Added long-press multi-select when browsing a source to add many series to your library at once (@aaronbamblett)\n- Added animated bottom navigation icons (@aaronbamblett)\n\n### ⚙️ Changes\n\n- Made auto reading mode respect your default reading mode and set that default to right-to-left on new installs (@aaronbamblett)\n- Removed the option to delete individual entries from history (@aaronbamblett)\n- Replaced the extension repo screen on older servers with a reminder to update your server (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Added an inline search bar that stays put while you scroll, toggled with **Persistent search bar** in Library settings (@zeedif)\n- Made the tracking card show the tracker's chapter total (@aaronbamblett)\n- Made series opened from Browse show their full details right away (@aaronbamblett)\n- Made chapter sorting work without a connection (@aaronbamblett)\n- Updated the manga description renderer (@zeedif)\n\n### 🧩 Fixes\n\n- Fixed a crash on startup (@aaronbamblett)\n- Fixed bulk-added series not appearing in the library until a refresh (@aaronbamblett)\n- Fixed reader, offline, and server-switch reliability issues (@aaronbamblett)\n- Fixed history and library display issues (@aaronbamblett)\n- Fixed settings and backup issues (@aaronbamblett)\n- Fixed sign-in sessions dropping unexpectedly (@aaronbamblett)\n- Fixed the extension store help link (@aaronbamblett)\n- Fixed crashes when opening some screens (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.0.0/tsumiru-v1.0.0-ios.ipa",
+          "size": 19590627,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.9.2",
+          "buildVersion": "44",
+          "date": "2026-07-18T06:06:13Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### 🧩 Fixes\n\n- Fixed the app failing to open on Windows with a `sqlite3.dll` error (@aaronbamblett)\n- Fixed a crash when adding a manga to the library (@aaronbamblett)\n- Fixed the reader flashing black while resizing the window on desktop (@aaronbamblett)\n- Fixed Sources, Extensions, History, and search flashing a spinner over the list on refresh (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Improved the spacing on the connection error and empty state screens (@zeedif)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.9.2/tsumiru-v0.9.2-ios.ipa",
+          "size": 18995340,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.9.1",
+          "buildVersion": "43",
+          "date": "2026-07-17T09:19:55Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### 🧩 Fixes\n\n- Fixed infinity scrolling dead-ending at chapter boundaries after resuming a series (@aaronbamblett)\n- Fixed \"Loading previous chapter...\" showing without the chapter ever arriving (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.9.1/tsumiru-v0.9.1-ios.ipa",
+          "size": 18991267,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.9.0",
+          "buildVersion": "42",
+          "date": "2026-07-17T06:11:09Z",
+          "localizedDescription": "> [!WARNING]\n> A reader bug in this build can stop the next or previous chapter from loading while you scroll. Download [v0.9.1](https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/tag/v0.9.1) instead.\n\nA manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added a grid view of numbered tiles for the chapter list, showing read and download state, with the choice remembered per series (@aaronbamblett)\n- Added **By Chapter Number** and **Alphabetically** chapter sorts (@aaronbamblett)\n- Added a **Display** tab to switch chapter titles between **Source title** and **Chapter number** (@aaronbamblett)\n- Added app-wide desktop keyboard shortcuts, listed under **Keyboard shortcuts** in **Settings** (@aaronbamblett)\n- Added **Global Search** (Ctrl + F on desktop) across your library, app screens, and sources (@aaronbamblett)\n- Added status, source, and tracked filters plus OR groups to library search (@aaronbamblett)\n- Added a choice of what backups include, such as **History**, **Tracking**, and **App settings** (@aaronbamblett)\n- Added a **Migrate** button to failed library updates (@aaronbamblett)\n- Added extension repo management to the **Extensions** tab (@aaronbamblett)\n- Added an on-device badge for series with chapters saved on this device, with a toggle under the library **Display** settings (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Gave the desktop app a theme-matched title bar, a remembered window size, and a rounded icon (@aaronbamblett)\n- Reduced GPU use while scrolling webtoons by loading pages at the size shown on screen (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed chapters flipping back to unread after you had read them (@aaronbamblett)\n- Fixed Android Back closing the app instead of returning to the **Library** tab (@aaronbamblett)\n- Fixed pages overlapping when zooming in the double-page reader (@aaronbamblett)\n- Fixed the **Page layout** setting having no effect in the paged reader (@aaronbamblett)\n- Fixed building on Windows with current Visual Studio versions (@zeedif)\n- Fixed a compile failure with current Flutter versions (@zeedif)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.9.0/tsumiru-v0.9.0-ios.ipa",
+          "size": 18995092,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.8.5",
+          "buildVersion": "41",
+          "date": "2026-07-14T01:12:34Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added auto scroll for webtoons with adjustable speed (@aaronbamblett)\n- Added auto advance to turn pages on a timer in the left-to-right and right-to-left reading modes (@aaronbamblett)\n- Added desktop keyboard navigation to the reader, with arrow keys and shortcuts for paging and chapters (@aaronbamblett)\n- Added changing categories for several series at once (@aaronbamblett)\n- Added a progress banner while your library updates (@aaronbamblett)\n- Added pull-to-refresh to the library (@aaronbamblett)\n- Added a collapsible desktop sidebar (@aaronbamblett)\n\n### ⚙️ Changes\n\n- Set new series to open in the reading mode that matches their type, webtoon or paged (@aaronbamblett)\n- Capped the crash log's size and added a way to clear it (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Pointed the app to **Connection settings** when the server can't be reached, instead of a blank screen (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed reading progress being lost when you close the app straight from the reader (@aaronbamblett)\n- Fixed crashes when moving between the reader and a series page (@aaronbamblett)\n- Fixed reading forward marking a finished chapter as unread (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.8.5/tsumiru-v0.8.5-ios.ipa",
+          "size": 17175868,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.8.4",
+          "buildVersion": "40",
+          "date": "2026-07-11T16:39:49Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Rebuilt the page-by-page reader with zoom, pan, smoother page turns and double-page spreads, and controls matching the long-strip reader (@aaronbamblett)\n- Added your own tags on any manga from its details page (@aaronbamblett)\n- Added filtering the library by tag, and search terms like `tag:seinen`, `author:oda`, and `rating:>=4` (@aaronbamblett)\n- Added actions when tapping a genre or tag: search your library, search all sources, or copy it (@aaronbamblett)\n- Added **Your rating** on the details page, with library sort by **Rating** and a **Minimum rating** filter (@aaronbamblett)\n- Added a **Comfortable grid** library display option showing each title under its cover (@aaronbamblett)\n- Added a **Read progress bar** display option showing how much of each series you've read (@aaronbamblett)\n- Added a **Default category** setting for where newly added manga go, or have the app ask each time (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed the Android Back button closing the app instead of returning to the **Library** tab (@aaronbamblett)\n- Fixed switching servers keeping the previous server's downloads without asking (@aaronbamblett)\n- Fixed the long-strip reader not scrolling to the end of chapters that finish with short pages, which kept them from marking as read (@aaronbamblett)\n- Fixed reading progress not always saving when you leave the reader (@aaronbamblett)\n- Fixed category edits not updating the library immediately (@aaronbamblett)\n- Fixed **Global Search** forgetting whether you last searched pinned sources or all of them (@aaronbamblett)\n- Fixed the unread-count badge being unreadable on light-accent themes like Monochrome (@aaronbamblett)\n- Fixed a stray colored dot in the genre list on some sources (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.8.4/tsumiru-v0.8.4-ios.ipa",
+          "size": 17146548,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.8.2",
+          "buildVersion": "39",
+          "date": "2026-07-05T14:55:08Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### 🚀 Improvements\n\n- Replaced the unexpected error screen for server problems with a clear message (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed browsing a manga adding it to your library (@aaronbamblett)\n- Fixed **Clear Cache** in **Settings** doing nothing (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.8.2/tsumiru-v0.8.2-ios.ipa",
+          "size": 16782276,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.8.1",
+          "buildVersion": "38",
+          "date": "2026-07-03T17:50:23Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ⚙️ Changes\n\n- Turned **Auto-refresh on Timeout** on by default (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed the \"No stream event\" timeout errors when reading from slow sources (@aaronbamblett)\n- Fixed the **Server Request Timeout** setting having no effect, with a new 30 second default and a 120 second maximum (@aaronbamblett)\n- Fixed the Linux Flatpak reporting the wrong version (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.8.1/tsumiru-v0.8.1-ios.ipa",
+          "size": 16777652,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.8.0",
+          "buildVersion": "37",
+          "date": "2026-07-03T02:38:35Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added reader settings for scale type, double pages for spreads, crop borders, brightness, background color, color filters, and fullscreen (@aaronbamblett)\n- Added per-series reader settings under **For this series** alongside your defaults, applying as you change them (@aaronbamblett)\n- Added double-tap to zoom in where you tapped, and double-tap again to zoom out (@aaronbamblett)\n- Added long-press on a page to copy, share, or save the image (@aaronbamblett)\n- Added a four-tab library panel: **Filter**, **Sort**, **Display**, and **Group** (@aaronbamblett)\n- Added filtering by downloaded, unread, categories, or tracked, each including or excluding (@aaronbamblett)\n- Added more sort options, including **Random** and **Tracker score** (@aaronbamblett)\n- Added a **Cover-only grid** display option, separate column counts for portrait and landscape, and more badges (@aaronbamblett)\n- Added grouping the library by source, status, or track status (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed library cover titles being unreadable in light mode (@aaronbamblett)\n- Fixed the session-expired banner's Re-authenticate button not always opening the sign-in dialog (@aaronbamblett)\n- Fixed web setup failing with \"Unauthorized\" instead of showing the sign-in form (@aaronbamblett)\n- Fixed web setup rejecting server addresses without the `http://` part (@aaronbamblett)\n- Fixed a crash that could happen when opening a webtoon chapter (@aaronbamblett)\n- Fixed reader settings sliders not following your finger as you drag (@aaronbamblett)\n- Fixed the one-click Flatpak install link pointing at the project's old location (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.8.0/tsumiru-v0.8.0-ios.ipa",
+          "size": 16780165,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.7.2",
+          "buildVersion": "36",
+          "date": "2026-07-01T02:14:40Z",
+          "localizedDescription": "A fast, multiplatform reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added choosing how much to keep when you mark a series **Keep offline** from the library: the next 5, 10, or 25 unread, all unread, or all (@aaronbamblett)\n- Added showing which **Keep offline** mode is active on a title (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Made clearing the server download queue update the list instantly (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed the long-strip reader not scrolling on iOS (@aaronbamblett)\n- Fixed \"What's New\" showing an old changelog instead of the current release notes (@aaronbamblett)\n- Fixed the in-app update check pointing at the wrong repository (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.7.2/tsumiru-v0.7.2-ios.ipa",
+          "size": 16083958,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.7.1",
+          "buildVersion": "35",
+          "date": "2026-06-30T17:14:29Z",
+          "localizedDescription": "A fast, multiplatform reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added keeping the screen on while reading, on by default (@aaronbamblett)\n- Added a choice when opening **Web View**: the source site or your server's own page for the manga (@aaronbamblett)\n- Added pinning sources to keep them at the top, and filtering **Global Search** by source (@aaronbamblett)\n- Added pausing and resuming on-device downloads, choosing which categories download on their own, and a Wi-Fi-only option, on by default (@aaronbamblett)\n- Added one **Downloads** screen with **Server** and **On device** tabs (@aaronbamblett)\n- Added a readable startup error with a copy-log button, plus copying the latest log from the bottom of **Settings** (@aaronbamblett)\n\n### ⚙️ Changes\n\n- Added a confirmation step before queueing a large bulk download (@aaronbamblett)\n- Made turning off adult content hide adult sources, not just adult extensions (@aaronbamblett)\n- Sorted extensions alphabetically within each group (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed bulk mark-as-read skipping your trackers (@aaronbamblett)\n- Fixed the manga page and updates list showing stale read and in-library state after you act (@aaronbamblett)\n- Fixed the auth-mode menu in connection settings opening in the wrong place (@aaronbamblett)\n- Fixed reading several chapters back to back saving progress to the wrong chapter or dropping offline reads (@aaronbamblett)\n- Fixed a sync being able to wipe offline bookmarks (@aaronbamblett)\n- Fixed the live server connection not signing back in after a re-login, which froze the download and library-update feeds (@aaronbamblett)\n- Fixed failed server actions looking like they worked (@aaronbamblett)\n- Fixed chapters deleted on the server staying on your device (@aaronbamblett)\n- Fixed first-run server discovery hanging (@aaronbamblett)\n- Fixed manga details staying empty on first open until a manual refresh (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.7.1/tsumiru-v0.7.1-ios.ipa",
+          "size": 16194025,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.7.0",
+          "buildVersion": "34",
+          "date": "2026-06-28T05:10:40Z",
+          "localizedDescription": "A fast, multiplatform reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added tracker support: connect the trackers your Suwayomi server offers, such as AniList and MyAnimeList, under **Settings → Tracking**, then link one to a series from its manga page (@aaronbamblett)\n- Added editing a linked tracker from the manga page, including status, score, and chapters read (@aaronbamblett)\n- Added automatic tracker updates when you mark chapters read, including offline reads that sync when you reconnect (@aaronbamblett)\n- Added carrying tracker links over when you migrate a series to another source (@aaronbamblett)\n- Added automatic download-ahead with options for the next 5, 10, or 25 unread, all unread, or every chapter (@aaronbamblett)\n- Added deleting chapters automatically as you finish them, with separate switches for this device and the server under **Settings → Downloads** (@aaronbamblett)\n- Added a **Continue reading button** option under the library's **Display** settings that jumps straight to your next unread chapter (@aaronbamblett)\n- Added a switch under **Settings → Reader** to silence feedback toasts like \"No more chapters ahead\" (@aaronbamblett)\n- Added a **Refresh chapters from source** toggle under **Settings → Library**, off by default (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Made the offline save button work for chapters the server has not downloaded yet, triggering the server download first (@aaronbamblett)\n- Made chapter lists show what your server already has when a source site is unreachable, instead of an empty list (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed series removed from your library still showing up in it (@aaronbamblett)\n- Fixed filter checkboxes being invisible on light themes, and the filter dialog's tab underline sitting off the selected tab (@aaronbamblett)\n- Fixed the continuous reader spamming \"No more chapters ahead\" while you scroll (@aaronbamblett)\n- Fixed several light-theme spots where selected states and the Android navigation-bar icons were white-on-white (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.7.0/tsumiru-v0.7.0-ios.ipa",
+          "size": 15968132,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "0.6.1",
+          "buildVersion": "33",
+          "date": "2026-06-26T14:53:20Z",
+          "localizedDescription": "A fast, multiplatform reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added the first iOS build, an unsigned IPA you sideload, with instructions under Install below (@aaronbamblett)\n- Added a **Don't remind me about this version** checkbox to the update prompt (@aaronbamblett)\n\n### ⚙️ Changes\n\n- Moved server URL, port, and authentication together under **More → Connection** (@aaronbamblett)\n- Limited **Settings → Server** to the Suwayomi server's own settings (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v0.6.1/tsumiru-v0.6.1-ios.ipa",
+          "size": 15849142,
+          "minOSVersion": "14.0"
+        }
+      ]
+    }
+  ],
   "news": []
 }
