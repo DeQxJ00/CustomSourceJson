@@ -29,6 +29,15 @@
       },
       "versions": [
         {
+          "version": "1.1.4",
+          "buildVersion": "50",
+          "date": "2026-08-08T08:30:12Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added an extension update count to the **Browse** tab in the navigation bar (@aaronbamblett)\n\n### ⚙️ Changes\n\n- Turned **Reader initial overlay** off by default, so chapters open straight to the page (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Improved CPU usage while downloading series (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed high CPU usage on your device and server every time the app launched (@aaronbamblett)\n- Fixed genre tags being unreadable in light mode (@aaronbamblett)\n- Fixed being unable to leave **Global Search** when opened from the library (@aaronbamblett)\n- Fixed the paged reader stopping halfway between two pages (@aaronbamblett)\n- Fixed the seekbar chapter buttons jumping to the first or last page in webtoon mode (@aaronbamblett)\n- Fixed the seekbar chapter buttons pointing the wrong way in right-to-left reading (@aaronbamblett)\n- Fixed the download queue stalling without an explanation after a connection dropped (@aaronbamblett)\n- Fixed interrupted chapter downloads appearing complete (@aaronbamblett)\n- Fixed failed re-downloads deleting chapters already saved on your device (@aaronbamblett)\n- Fixed chapters removed from the server reappearing on your device (@aaronbamblett)\n- Fixed **Re-authenticate** doing nothing with JWT or simple login (@aaronbamblett)\n- Fixed installed extensions not adding their sources to **Sources** until the app restarted (@aaronbamblett)\n- Fixed sign-in credentials not being saved on macOS (@JeffShih-wiwynn)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.1.4/tsumiru-v1.1.4-ios.ipa",
+          "size": 19960892,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.1.3",
           "buildVersion": "49",
           "date": "2026-08-01T06:58:48Z",
