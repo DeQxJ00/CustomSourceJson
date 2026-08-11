@@ -29,6 +29,15 @@
       },
       "versions": [
         {
+          "version": "1.1.5",
+          "buildVersion": "51",
+          "date": "2026-08-10T04:16:37Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### 🚀 Improvements\n\n- Downloads now wait for your server to come back before trying again (@aaronbamblett)\n- The app now switches to offline mode straight away when your server is unreachable (@aaronbamblett)\n- Library covers now appear faster and use less data (@aaronbamblett)\n- The download notification now stays on screen and names what stopped the queue (@aaronbamblett)\n- The offline banner and its **Refresh** button now appear on series pages (@aaronbamblett)\n- Reduced the work your server does while you use the app (@aaronbamblett)\n\n### ⚙️ Changes\n\n- Removed the reader magnifier, since pinch and double-tap zoom cover it (@aaronbamblett)\n- Long press in the reader can now be switched off entirely with **Show actions on long tap** (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed the download queue failing all at once when your server became unreachable (@aaronbamblett)\n- Fixed downloads not resuming when the app was opened while your server was unreachable (@aaronbamblett)\n- Fixed downloaded chapters opening slowly or not at all offline (@aaronbamblett)\n- Fixed categories with nothing downloaded disappearing from the library offline (@aaronbamblett)\n- Fixed **Suggestions** leaving an empty gap when it could not load (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.1.5/tsumiru-v1.1.5-ios.ipa",
+          "size": 19958509,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.1.4",
           "buildVersion": "50",
           "date": "2026-08-08T08:30:12Z",
