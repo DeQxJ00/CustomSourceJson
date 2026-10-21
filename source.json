@@ -29,6 +29,24 @@
       },
       "versions": [
         {
+          "version": "1.5.1",
+          "buildVersion": "5000",
+          "date": "2026-10-21T03:55:10Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### 🚀 Improvements\n\n- Added 36 missing Norwegian Bokmål translations (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed locked or empty chapters leaving you stuck in the reader with no way back (@l3gitpanda)\n- Fixed **Test connection** in setup blanking the window and checking the server twice (@aaronbamblett)\n- Fixed Android updates failing when you switch between the universal APK and an APK for your device (@aaronbamblett)\n\n*Tsumiru can now be translated on [Weblate](https://hosted.weblate.org/projects/suwayomi/suwayomi-tsumiru/).*",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.5.1/tsumiru-v1.5.1-ios.ipa",
+          "size": 17507496,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "1.5.0",
+          "buildVersion": "60",
+          "date": "2026-10-20T16:58:26Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added a desktop layout for the Library (@aaronbamblett)\n- Added a desktop layout for the series page (@aaronbamblett)\n- Added search to the top of every desktop page (@aaronbamblett)\n- Added search to every main page on phones (@aaronbamblett)\n- Added search for individual settings (@aaronbamblett)\n- Added chapter swipe actions on phones (@aaronbamblett)\n- Added **Web interface** to Server settings to choose and update your server's web interface (@aaronbamblett)\n\n### ⚙️ Changes\n\n- Changed the app font to Inter (@aaronbamblett)\n- Changed the Mac app to need macOS 12 or newer (@aaronbamblett)\n- Changed **Notifications** to show only on Android, where they work (@aaronbamblett)\n- Changed new Flatpak installs to the app ID `app.tsumiru.Tsumiru` (@aaronbamblett)\n- Changed **In library** to ask before removing a series (@aaronbamblett)\n- Removed the chapter grid view (@aaronbamblett)\n- Removed the help text in **Downloads** (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Merged the desktop title bar and page toolbars into one bar (@aaronbamblett)\n- Made the desktop sidebar narrower and kept it on every page (@aaronbamblett)\n- Gave tablets the desktop layout (@aaronbamblett)\n- Added keyboard navigation through search results and covers (@aaronbamblett)\n- Added **Bookmark** and **Mark previous as read** to chapter selection (@aaronbamblett)\n- Added **Undo** after marking chapters read or unread (@aaronbamblett)\n- Added scroll arrows and **See all** to cover rows on desktop (@aaronbamblett)\n- Made sources that fail in **Global Search** show **Retry** (@aaronbamblett)\n- Made **Persistent search bar** apply to every page (@aaronbamblett)\n- Made Long strip and Webtoon glide with a mouse wheel (@aaronbamblett)\n- Moved the Mac logo to the top of the sidebar (@aaronbamblett)\n- Made the logo show in full colour on every theme (@aaronbamblett)\n- Made buttons that can't be pressed look greyed out (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed downloaded chapters opening slowly on a slow connection (@aaronbamblett)\n- Fixed the browser version failing to connect to newer servers (@aaronbamblett)\n- Fixed broken covers in the browser version until a reload after signing in (@aaronbamblett)\n- Fixed the Mac app not opening when the keychain refuses access (@aaronbamblett)\n- Fixed crashes in some extensions' settings and on chapters that need a login (@aaronbamblett)\n- Fixed the series page looking cramped at medium window widths (@aaronbamblett)\n- Fixed resizing the window during a migration going back to the series page (@aaronbamblett)\n- Fixed the desktop app freezing while resizing the window (@aaronbamblett)\n- Fixed the desktop app crashing on close on Linux (@aaronbamblett)\n- Fixed the desktop sidebar flickering when changing pages (@aaronbamblett)\n- Fixed a bright line at the edge of cover rows on desktop (@aaronbamblett)\n- Fixed **Backup Location** showing the wrong title (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.5.0/tsumiru-v1.5.0-ios.ipa",
+          "size": 17514349,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.4.0",
           "buildVersion": "59",
           "date": "2026-10-13T05:54:44Z",
