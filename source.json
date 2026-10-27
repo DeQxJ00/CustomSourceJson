@@ -29,6 +29,15 @@
       },
       "versions": [
         {
+          "version": "1.6.1",
+          "buildVersion": "5002",
+          "date": "2026-10-27T07:47:54Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ⚙️ Changes\n\n- Added **Split tall images** to Reader settings, shown only on devices with a low GPU texture limit (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed very tall webtoon pages looking squashed on devices with a low GPU texture limit (@aaronbamblett)\n- Fixed **More** doing nothing on medium-width desktop windows and tablets, which left **Settings** out of reach (@aaronbamblett)\n- Fixed series opened from a source's full results in Global Search showing a black screen (@aaronbamblett)\n- Fixed Quick Search leaving the reader on screen when opening a series or Global Search while reading (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.6.1/tsumiru-v1.6.1-ios.ipa",
+          "size": 18278152,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.6.0",
           "buildVersion": "5001",
           "date": "2026-10-26T04:35:41Z",
