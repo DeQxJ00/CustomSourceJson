@@ -29,6 +29,15 @@
       },
       "versions": [
         {
+          "version": "1.6.2",
+          "buildVersion": "5003",
+          "date": "2026-10-28T02:29:20Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### 🚀 Improvements\n\n- Added back the chapter grid view on the series page, saved per series (@aaronbamblett)\n- Added the reason and a **Cancel** option to failed downloads (@aaronbamblett)\n- Renamed the macOS download to `…-macos-universal.zip` to make clear it runs natively on Apple Silicon and Intel (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed one failing chapter pausing every download and showing the app as offline on a working connection (@aaronbamblett)\n- Fixed the **Filter** button covering the selection bar when selecting titles in a source (@aaronbamblett)\n- Fixed the **Reset** and **Filter** buttons being cut off in the source filter sheet (@aaronbamblett)\n\n*Thanks to our Weblate translators Andrei Stepanov, Constantin Piber and Kisnov for the Catalan, German and Russian updates.*",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.6.2/tsumiru-v1.6.2-ios.ipa",
+          "size": 18312147,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.6.1",
           "buildVersion": "5002",
           "date": "2026-10-27T07:47:54Z",
