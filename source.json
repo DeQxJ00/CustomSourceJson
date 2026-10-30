@@ -29,6 +29,15 @@
       },
       "versions": [
         {
+          "version": "1.6.3",
+          "buildVersion": "5004",
+          "date": "2026-10-30T05:42:54Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ⚙️ Changes\n\n- Changed the Android signing key, and updates still install without a reinstall (@aaronbamblett)\n- Added a weekly reminder to switch away from Basic Auth, which is deprecated (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Added support for AVIF images on Linux (@aaronbamblett)\n- Made **Custom brightness** in the reader work on desktop and web (@aaronbamblett)\n- Moved the sign-in, **Incognito mode** and **Updating library…** banners beside the sidebar on wide screens, so they no longer push it down (@aaronbamblett)\n- Removed the Flatpak's NetworkManager permission by reading network status from the desktop portal (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed the source toolbar missing the first time you open a source on desktop (@aaronbamblett)\n- Fixed the macOS app crashing while you resize the window (@aaronbamblett)\n- Fixed banners covering the top bar on macOS (@aaronbamblett)\n- Fixed Library showing **No visible categories** and an empty top bar after your session expires (@aaronbamblett)\n- Fixed a fresh install showing **Session expired. Sign in again.** before setup is finished (@aaronbamblett)\n- Fixed empty screens running past the bottom in landscape when a banner and the keyboard are showing (@aaronbamblett)\n- Fixed setup rejecting Basic Auth servers running a current Suwayomi preview (@aaronbamblett)",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.6.3/tsumiru-v1.6.3-ios.ipa",
+          "size": 18404468,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.6.2",
           "buildVersion": "5003",
           "date": "2026-10-28T02:29:20Z",
