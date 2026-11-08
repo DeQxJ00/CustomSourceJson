@@ -29,6 +29,15 @@
       },
       "versions": [
         {
+          "version": "1.6.5",
+          "buildVersion": "5006",
+          "date": "2026-11-07T23:44:29Z",
+          "localizedDescription": "A manga and webtoon reader for your [Suwayomi](https://suwayomi.org/) server.\n\n### ✨ New Features\n\n- Added **Per-category settings for sort and filters** to the Library, including changes made offline (@aaronbamblett)\n- Added notifications when a new Tsumiru or server version is out, with **Remind later** and **Ignore** (@aaronbamblett)\n- Added **Offset double spreads** to the paged reader for spreads that start on an odd page (@PainTownblue)\n\n### ⚙️ Changes\n\n- Made long strip taps and keys scroll by **Scroll distance** instead of a whole page (@aaronbamblett)\n- Changed **Keep screen on** to off by default (@aaronbamblett)\n- Added Up and Down page turns in horizontal paged mode and N and P to change chapter (@aaronbamblett)\n\n### 🚀 Improvements\n\n- Hid empty category tabs while searching or filtering the library, with **Show empty categories during search/filtering** to keep them (@aaronbamblett)\n- Moved **Create registration code** to **Manage users** and added an **Edit** button to user rows (@aaronbamblett)\n\n### 🧩 Fixes\n\n- Fixed the offline library not opening when Tsumiru starts without a connection (@aaronbamblett)\n- Fixed **Something went wrong** showing on every page while reading offline (@aaronbamblett)\n- Fixed library covers going blank in Safari after scrolling them off screen and back (@aaronbamblett)\n- Fixed the paged reader restoring an old zoom when you return to a page (@aaronbamblett)\n- Fixed saved searches from older WebUI versions not loading (@aaronbamblett)\n\n*Thanks to our Weblate translators: Damien O'Neil for French, Kisnov for Catalan, Andrei Stepanov for Russian and PainTownblue for Chinese.*",
+          "downloadURL": "https://github.com/Suwayomi/Suwayomi-Tsumiru/releases/download/v1.6.5/tsumiru-v1.6.5-ios.ipa",
+          "size": 17346615,
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.6.4",
           "buildVersion": "5005",
           "date": "2026-11-02T05:46:16Z",
